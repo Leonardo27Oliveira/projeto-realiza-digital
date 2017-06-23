@@ -1,0 +1,81 @@
+
+	body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	background-color: #EED2EE;
+	color: #1C1C1C;
+	padding-bottom: 80px;
+}
+
+	label span {
+	display: block;
+}
+
+	h1 {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: -3px;
+	text-align: center;
+	letter-spacing: 0px;
+	text-shadow: 1px 2px 10px #000000;
+	transition: letter-spacing 1s ease-in-out; 
+}
+
+	#dados {
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	letter-spacing: 2px;
+
+}
+
+	#dados input {
+	margin-bottom: 10px;
+	width: 90px;
+    transition: width .20s ease-in-out;
+}
+
+	#dados input:focus { 
+	width: 150px;
+}
+
+	h1:hover {
+		letter-spacing: 5px;
+}
+
+	#grupo1 {
+		float: left;
+		width: 33.3%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+}
+
+	#grupo2 {
+		float: left;
+		width: 33.3%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+}
+
+	#grupo3 {
+		clear: all;
+}
+
+	#grupo4 {
+		float: left;
+		width: 33.3%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-radius: 5px;
+}
+
+	h1:hover {
+		letter-spacing: 5px;
+}
+
+	.erro {
+		border-color: #FF0000;
+	}
