@@ -1,0 +1,64 @@
+﻿body {
+	font-family: 'Arial';
+	background: #9370DB;
+}
+
+h1 {
+	margin-left: 60px;
+}
+
+input, label {
+	display: block;
+}
+
+input {
+	padding: 5px;
+	width: 400px;
+
+}
+
+label {
+	font-size: 25px;
+	margin-left: 170px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+button {
+	display: block;
+	padding: 7px;
+	width: 400px;
+	border-radius: 7px;
+	background: white;
+	color: black;
+	margin-top: 25px;
+	margin-left: 7px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #4B0082;
+	color: white;
+	border: solid 2px #4B0082;
+}
+
+
+
+table p {
+	font-weight: bold;
+}
+
+.tabela {
+	margin-top: 30px;
+
+}
+
+.erro {
+	border-color: red;
+}
+
+#conteudo {
+	margin-top: 150px;
+	margin-left: 600px;
+}
+
