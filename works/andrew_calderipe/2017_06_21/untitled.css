@@ -1,0 +1,181 @@
+@keyframes bckg { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes test { 
+    0%{width: 50%;}
+    100%{width: 90%;}
+}
+body{
+	margin: 0;
+	padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200px;
+    background: linear-gradient(270deg, #d7d7d7, #cccccc, #aaaaaa);
+    background-size: 500% 500%;
+    animation: bckg 12s ease infinite;
+}
+#Header{
+	margin: 0 auto;
+    margin-top: 20px;
+    width: 700px;
+    border: 1px solid grey;
+    border-bottom-color: transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: white;
+}
+#Title{
+	text-align: center;
+	text-transform: uppercase;
+}
+#Dados{
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-top-color: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 700px;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+#Dados form{
+	padding-bottom: 20px;
+    width: 340px;
+}
+#Dados input{
+    border-radius:2px;
+}
+#Dados input[name=Idade]{
+    text-align: center;
+	width: 20%;
+}
+#Dados input[name=Nome]{
+    width: 50%;
+}
+#Dados input[type=button]{
+    text-align: center;
+    width: 24%;
+}
+#Dados input[name=Procura]{
+    text-align: center;
+    width: 100%;
+}
+.active {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background-color:#ededed;
+    border:1px solid #dcdcdc;
+    cursor:pointer;
+    color:#777777;
+    padding:3px 5px;
+    text-shadow:0px 1px 0px #ffffff;
+    transition: 0.5s ease-in-out;
+}
+.active:hover {
+    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color:#dfdfdf;
+}
+.active:active {
+    position:relative;
+    top:1px;
+}
+
+.hcol:hover{
+    background: #ccc;
+    transition: 0.5s ease;
+}
+.hcol td:nth-child(even){
+    text-align: center;
+}
+.hcol td:nth-child(odd){
+    width: 90%;
+}
+.Tabela {
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #666;
+    width: 700px;
+    margin: 0 auto;
+    background: white;
+}
+.Tabela thead tr th:nth-child(odd){
+    animation: test 4s ease forwards;
+}
+.Tabela thead tr th:nth-child(even){
+    text-align: center;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+tfoot th{
+    text-align: center;
+}
+
+@media screen and (min-width : 412px) and (max-width: 701px) {
+    #Header{
+        margin-top: 20px;
+        width: 95%;
+    }
+    #Dados{
+        width: 95%;
+    }
+    .Tabela {
+        width: 95%;
+    }
+}
+@media screen  and (min-width : 112px) and (max-width: 411px) {  
+    #Header{
+        margin-top: 20px;
+        width: 95%;
+    }
+    #Dados{
+        display: block;
+        height: 100px;
+        width: 95%;
+    }
+    #Dados form{
+        width: 100%;
+    }
+    #Dados input[name=Nome]{
+        width: 99%;
+        text-align: center;
+    }
+    #Dados input[name=Idade]{
+        width: 99%;
+        text-align: center;
+    }
+    #Dados input[name=Procura]{
+        width: 99%;
+        text-align: center;
+    }
+    #Dados input[type=button]{
+        width: 100%;
+        text-align: center;
+    }
+    #Dados label span{
+        margin-left: 43.25%;
+        width: 98%;
+        text-align: center;
+    }
+    .Tabela {
+        width: 95%;
+    }
+}
