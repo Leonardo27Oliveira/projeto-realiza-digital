@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="professor.css">
+</head>
+<h2>Formulário:</h2>
+<hr>
+
+<p>
+<label>Nome:</label>
+<input id="nome" style="width:100px">
+<label>Idade:</label>
+<input id="idade" style="width:100px">
+<button type="button" onclick="salvar()">Salvar</button>
+</p>
+
+<table id="tabela" style="width:50%" border="solid">
+    <tr>
+     <p><th>Nome:</th>               
+     <th>Idade:</th>
+     </tr>
+</table>
+
+<p id="aviso" style="color: red "></p>
+
+<script>
+
+aNomes = [];
+
+function salvar() {
+    nome=document.getElementById("nome").value;
+
+    if (nome=="") {
+        alert("Informe o nome");
+        document.getElementById("nome").focus();
+        return;
+    }
+           nome.push(nome);   
+           lista="";
+           for (i=0;i<lista.length;i++){
+           lista = lista + nome[i] + "\n";
+           document.getElementById("nome").value= lista;
+
+         }
+    document.getElementById("nome").value = "";
+    document.getElementById("nome").focus();
+}
+</script>
+
+</body>
+</html>
