@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="professor.css">
+</head>
+<h2>Formulário:</h2>
+<hr>
+
+<p>
+<label>Nome:</label>
+<input name="nome" type="text" style="width:100px">
+<label>Idade:</label>
+<input name="idade" type="number" style="width:100px">
+<input type="button" value="Salvar">
+</p>
+
+<table id="tabela" style="width:50%" border="solid">
+  <thead>
+     <tr>
+     <th>Nome:</th>               
+     <th>Idade:</th>
+     </tr>
+  </thead>
+  <tbody></tbody>
+  <tfoot>
+  <tr>
+    <th colspan="2">Total Pessoas: <span id="pessoas">0</span></th>
+  </tr>
+  </tfoot>
+    
+</table>
+
+<p id="aviso" style="color: red "></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="profl.js"></script>
+
+</body>
+</html>
