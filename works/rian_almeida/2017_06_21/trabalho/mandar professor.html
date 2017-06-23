@@ -10,44 +10,31 @@
 
 <p>
 <label>Nome:</label>
-<input id="nome" style="width:100px">
+<input name="nome" type="text" style="width:100px">
 <label>Idade:</label>
-<input id="idade" style="width:100px">
-<button type="button" onclick="salvar()">Salvar</button>
+<input name="idade" type="number" style="width:100px">
+<input type="button" value="Salvar">
 </p>
 
 <table id="tabela" style="width:50%" border="solid">
-    <tr>
-     <p><th>Nome:</th>               
+  <thead>
+     <tr>
+     <th>Nome:</th>               
      <th>Idade:</th>
      </tr>
+  </thead>
+  <tbody></tbody>
+  <tfoot>
+  <tr>
+    <th colspan="2">Total Pessoas: <span id="pessoas">0</span></th>
+  </tr>
+  </tfoot>
+    
 </table>
 
 <p id="aviso" style="color: red "></p>
-
-<script>
-
-aNomes = [];
-
-function salvar() {
-    nome=document.getElementById("nome").value;
-
-    if (nome=="") {
-        alert("Informe o nome");
-        document.getElementById("nome").focus();
-        return;
-    }
-           nome.push(nome);   
-           lista="";
-           for (i=0;i<lista.length;i++){
-           lista = lista + nome[i] + "\n";
-           document.getElementById("nome").value= lista;
-
-         }
-    document.getElementById("nome").value = "";
-    document.getElementById("nome").focus();
-}
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="profl.js"></script>
 
 </body>
 </html>
