@@ -4,7 +4,7 @@
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
-	background-color: #EED2EE;
+	background-color: #DB7093;
 	color: #1C1C1C;
 	padding-bottom: 80px;
 }
@@ -48,28 +48,44 @@
 
 	#grupo1 {
 		float: left;
-		width: 33.3%;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		width: 99.9%;
+		padding-top: 10px;
+		padding-bottom: 10px;
 }
 
 	#grupo2 {
 		float: left;
-		width: 33.3%;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		width: 99.9%;
+
 }
 
 	#grupo3 {
 		clear: all;
+		width: 99.9%;
+		padding-top: 10px;
+		padding-bottom: 10px;
 }
 
 	#grupo4 {
-		float: left;
-		width: 33.3%;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		border-radius: 5px;
+		position: absolute;
+		left: 50%;		
+		margin-left: -180px;
+		width: 360px;
+		height: 200px;
+		text-align: center;
+		
+}
+
+	.container {
+	margin: 20px;
+	padding: 20px;
+}
+
+ 	.table table-bordered {
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	letter-spacing: 2px;
 }
 
 	h1:hover {
