@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="formulario.css">
+</head>
+<h2>Formulário</h2>
+<hr>
+
+<p>
+<label>Nome:</label>
+<input name="nome" style="width:100px">
+<label>Idade:</label>
+<input type="number" name="idade" style="width:100px">
+<input type="button" value="Salvar">
+</p>
+
+<table id="tabela" style="width:50%" border="solid">
+	<tr>
+	 <th>Nome:</th>
+	 <th>Idade:</th>
+	</tr>
+</table>
+
+<p id="aviso" style="color: red "></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+var pessoas = [];
+
+$("input[type=button]").click(function(){
+	var nome = $("input[name=nome]").val()
+	var idade = $("input[name=idade]").val()
+
+	if (nome==""||idade==""){
+		alert("Informe os dados");
+		return false;
+	}
+
+	$("#tabela").append("<tr><td>" + nome + "</td><td>" + idade + "</td></tr>");
+});
+</script>
+
+</body>
+</html> 
