@@ -1,0 +1,11 @@
+body{
+background-color:#DEB887;
+text-align: center;
+}
+#tabela{
+	margin: 0 auto;
+	background-color:#D2B48C;
+	text-transform: capitalize;
+	width: 80%;
+
+}
