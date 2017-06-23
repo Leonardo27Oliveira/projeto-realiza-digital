@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Registros</title>
+	
+	<link href="21_06.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Registros</h1>
+		</div>
+		<div id="form">
+			<form>
+				<h3>
+					Nome: <input type="text" id="nome">
+					Idade: <input type="number" id="idade">
+					<button type="button" onclick="add()">Salvar</button>
+				</h3>
+			</form>
+		</div>
+		<div id="table">
+			<table>
+			  <thead>
+			    <th width="90%">Nome</th>
+			    <th>Idade</th>
+			  </thead>
+			</table>
+		</div>
+		<div id="footer">
+			<h3>Total: <span id="total"></span></h5>
+		</div>
+	</div>
+	<script type="text/javascript" src="21_06.js"></script>
+	<script type="text/javascript">
+	var tot = 0;
+	function add() {
+		tot = tot + 1;
+		document.getElementById("total").innerHTML = tot;
+	}
+	</script>
+</body>
+</html>
