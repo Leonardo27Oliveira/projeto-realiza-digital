@@ -1,0 +1,30 @@
+body{
+	margin: 0 auto;
+	padding: 20px;
+	background: #DCDCDC;
+}
+table,tr,th{
+
+		border: 1px solid black;
+	}
+	table{
+		margin: 100px auto;
+		background:pink;
+		width: 50%;
+		text-transform: capitalize;
+		border-collapse: collapse;
+
+	}
+	span{
+		color: #DA70D6;
+		
+
+	}
+#dadosPessoais{
+margin: 0 auto;
+ text-align: center;
+}
+h3{
+	color: #DA70D6;
+	text-decoration: underline;
+}

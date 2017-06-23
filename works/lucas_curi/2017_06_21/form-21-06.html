@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <title>Lista de Convidados</title>
+      <link rel="stylesheet" type="text/css" href="form-21-06.css">
+   </head>
+   <body>
+      <div id="conteudo">
+         <h1>Lista de Convidados</h1>
+         <div id="campos">
+            <label for="nome">Nome: </label><input type="text" name="nome" id="nome">
+            <label for="idade">Idade: </label><input type="number" name="idade" id="idade">
+            <button id="salvar" type="button">Salvar</button>
+         </div>
+         <div id="T">
+            <table class="tabela" border="1" cellpadding="8px" cellspacing="0" width="43%">
+               <thead>
+                  <tr>
+                     <th>Nome</th>
+                     <th>Idade</th>
+                  </tr>
+               </thead>
+               <tfoot>
+                  <tr>
+                     <th colspan="2">Total de Pessoas:<span id="pessoas">0</span></th>
+                  </tr>
+               </tfoot>
+            </table>
+         </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="la.js"></script>
+
+   </body>
+</html>

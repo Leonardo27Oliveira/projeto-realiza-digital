@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registro Pessoal</title>
+	<link rel="stylesheet" type="text/css" href="21.css">
+</head>
+<body>
+<div id="dadosPessoais">
+	<form>
+	<h3> Registro Pessoal</h3>
+		<label>
+			<span>Nome:</span>
+			<input type="text" name="Nome">
+			<span>Idade:</span>
+			<input type="number" name="Idade">
+		</label>
+		<input type="button" value="Salvar">
+	</form>
+</div>
+<table id="tabela">
+  <tr>
+    <th>Nome</th> 
+    <th>Idade</th>
+  </tr>
+  <tfoot>
+  	<th colspan="2"> Total: <span id="total">0</span></th>
+  </tfoot>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="21.js"></script>
+</body>
+</html>
