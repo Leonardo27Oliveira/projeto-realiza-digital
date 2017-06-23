@@ -1,0 +1,44 @@
+body {
+	background: #DCDCDC;
+	margin: 0;
+	padding: 0;
+}
+#Header {
+	margin: 0 auto;
+	width: 450px
+	padding-bottom: 20px; 
+	
+}
+#Title {
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 4px solid grey;
+}
+#Dados {
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+#Dados form {
+	padding-bottom: 20px;
+}
+#Dados input[name=idade]{
+    width: 50px;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 50%
+	margin: 10 auto;
+}
+td, th {
+	border: 5px solid black;
+	text-align: left;
+	padding: 5px;
+}
+tfoot th {
+	text-align: center;
+}

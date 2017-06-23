@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="tabela.css">
+</head>
+<body>
+<div id="Header">
+	<div id="Title">
+	<h1>Cadastro...</h1>
+	</div>
+</div>
+<div id="Dados">
+	<form>
+		<label>
+			<span>Nome:</span>
+			<input type="text" name="Nome">
+			<span>Idade:</span>
+			<input type="number" name="Idade">
+		</label>
+		<input type="button" value="Salvar">
+	</form>
+</div>
+<table id="Tabela">
+  <thead>
+	  <tr>
+	    <th>Nome:</th>
+	    <th>Idade:</th>
+	  </tr>
+  </thead>
+  <tfoot>
+		<tr>
+			<th colspan="2">Total de Pessoas: <span id="pessoas">0</span></th>
+		</tr>
+  </tfoot>
+  </table>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="jquery.js"></script>
+</body>
+</html>
