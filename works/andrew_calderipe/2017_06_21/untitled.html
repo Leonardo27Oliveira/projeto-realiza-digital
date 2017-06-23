@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="untitled.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="Header">
+	<div id="Title">
+		<h1>Registro</h1>
+	</div>	
+</div>
+<div id="Content">
+	<div id="Dados">
+		<form>
+			<input type="text" name="Procura" placeholder="Procurar">
+			<label>
+				<input type="text" name="Nome" placeholder="Nome">
+			</label>
+			<label>
+				<input class="sarrow" type="number" name="Idade" min="1" placeholder="Idade">
+			</label>
+			<input class="active" type="button" value="Salvar">
+		</form>
+		
+	</div>
+	<div id="Tabela">
+		<table class="Tabela">
+		  <thead>
+			  <tr>
+			    <th name="Nome">Nome</th>
+			    <th name="Idade">Idade</th>
+			  </tr>
+		  </thead>
+		  <tbody></tbody>
+		  <tfoot>
+				<tr>
+					<th colspan="2">Total de Pessoas:<span id="pessoas">0</span></th>
+				</tr>
+		  </tfoot>
+		</table>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="untitled.js"></script>
+</body>
+</html>
