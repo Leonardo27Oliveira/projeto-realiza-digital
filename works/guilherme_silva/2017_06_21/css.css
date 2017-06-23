@@ -3,7 +3,6 @@ table, th {
 	border-collapse: collapse;
 	margin-top: 25px;
     margin-left: 43%;
-
 }
 .error {
 	border-width: 3px;
@@ -17,7 +16,4 @@ input {
 	width: 55px;
 	height: 13px;
 	margin-top: 15px;
-}
-#kk {
-	height: 30px;
 }
