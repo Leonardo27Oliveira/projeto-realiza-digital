@@ -1,0 +1,23 @@
+table, th {
+	border:1px solid black;
+	border-collapse: collapse;
+	margin-top: 25px;
+    margin-left: 43%;
+
+}
+.error {
+	border-width: 3px;
+	border-color: red;
+}
+#qqs {
+	display: flex;
+	justify-content: center;
+}
+input {
+	width: 55px;
+	height: 13px;
+	margin-top: 15px;
+}
+#kk {
+	height: 30px;
+}
