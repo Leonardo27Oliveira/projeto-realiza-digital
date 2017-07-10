@@ -1,5 +1,3 @@
-var api = "http://192.168.20.91:8085/";
-
 $('form').on('submit', function() {
 	var data = {};
 
@@ -9,13 +7,14 @@ $('form').on('submit', function() {
 
 	$.ajax({
 		type: 'POST',
-		url: api + 'register',
+		url: window.api.url + 'register',
 		data: data,
 		success: function (res) {
-			console.log(res);
+			alert('Cadastro realizado com sucesso!');
+			window.location = 'index.html';
 		},
 		error: function (res) {
-			console.log(res);
+			alert(res.responseJSON.error.message);
 		}
 	});
 

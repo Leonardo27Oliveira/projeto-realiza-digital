@@ -1,5 +1,3 @@
-var api = "http://192.168.20.91:8085/";
-
 $('form').on('submit', function() {
 	var data = {};
 
@@ -9,13 +7,16 @@ $('form').on('submit', function() {
 
 	$.ajax({
 		type: 'POST',
-		url: api + 'login',
+		url: window.api.url + 'login',
 		data: data,
 		success: function (res) {
-			console.log(res);
+			var user = res;
+			user.password = data.password;
+			localStorage.setItem('userData', JSON.stringify(user));
+			window.location = 'home.html';
 		},
 		error: function (res) {
-			console.log(res.responseJSON.error.message);
+			alert(res.responseJSON.error.message);
 		}
 	})
 
